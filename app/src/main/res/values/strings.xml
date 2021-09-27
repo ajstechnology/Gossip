@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Gossip Messenger</string>
+    <string name="sign_up"><u>Sign up</u></string>
+    <string name="sign_in"><u>Sign in</u></string>
+    <string name="title_activity_buttom_navigation_activity">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="connection_error">Connection error!\nMake sure you are connected with the internet</string>
+
+    <!--    File Handling-->
+    <string name="empty_directory">Empty Directory</string>
+    <string name="choose_file">Select a file</string>
+    <string name="error_selecting_file">Error selecting File</string>
+    <string name="internal_storage">Internal storage</string>
+    <string name="preview_description" />
+
+
+    <string name="phone_validation">Phone number should be 10-digit</string>
+    <string name="username_validation">Username must be between 3–20 characters</string>
+    <string name="email_validation">Please provide your email address in the format of yourname@example.com</string>
+    <string name="invalid_phone_validation">Invalid phone number</string>
+    <string name="password_validation_desc">Password must be 1 uppercase, 1 lowercase, 1 numeric, 1 special char and minimum length 8</string>
+    <string name="alpha_numeric">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="old_mobile_number">You\'ve entered the current mobile number. Please give a new mobile number to update.</string>
+    <string name="old_email_address">You\'re entered your current email address. Please give a new email address to update.</string>
+    <string name="otp_verification_code_desc">Please type the verification code sent to</string>
+    <string name="laxman_marothiya"> Laxman Marothiya</string>
+
+    <string name="txt_more">More</string>
+    <string name="txt_call">Archive</string>
+    <string name="txt_unread">Unread</string>
+
+
+    <string-array name="moreitem">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+    </string-array>
+</resources>

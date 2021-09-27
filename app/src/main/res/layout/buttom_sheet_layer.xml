@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.button.MaterialButton"
+    android:layout_height="wrap_content">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/listmenuofchat"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+
+<!--<LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:background="@color/gray"
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_height="@dimen/_30sdp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_home_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="@dimen/_8ssp"
+            android:text=""
+            android:id="@+id/text0"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </LinearLayout>-->
+</LinearLayout>

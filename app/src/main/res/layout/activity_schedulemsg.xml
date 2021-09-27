@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/purple_200"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_weight="0.1"
+            android:layout_gravity="left|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/about_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Schedule Message "
+            android:textColor="@android:color/white"
+             />
+
+        <TextView
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/nunito"
+            android:text="Save" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp"
+        android:weightSum="8"
+       >
+
+        <TextView
+            android:id="@+id/insert_contact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="2"
+            android:text="Send To : "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Theme.Signin.Button.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="4"
+            android:text="Contacts"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:cornerRadius="@dimen/_5sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/user_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp"
+        android:weightSum="8"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="2"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Theme.Signin.Button.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="4"
+            android:text="Username"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:cornerRadius="@dimen/_5sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/dateofdelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp"
+        android:weightSum="8"
+        >
+
+        <TextView
+            android:id="@+id/txtdateofdeliveryclick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="3"
+            android:text="Date of Delivery :"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/txtdateofdelivery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="4"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            app:cornerRadius="@dimen/_5sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/timeofdelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_15sdp"
+        android:weightSum="8"
+        >
+
+        <TextView
+            android:id="@+id/txttimeofdeliveryclick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="3"
+            android:text="Time of Delivery : "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/txttimeofdelivery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="4"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            app:cornerRadius="@dimen/_5sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp"
+        android:weightSum="8"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="2"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Theme.Signin.Button.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="4"
+            android:textStyle="normal"
+            android:text="Send Message"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:cornerRadius="@dimen/_5sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/senddoc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp"
+        android:weightSum="8"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="2"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Theme.Signin.Button.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="4"
+            android:textStyle="normal"
+            android:text="Send Document"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:cornerRadius="@dimen/_5sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sendphotos_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_5sdp"
+        android:weightSum="8"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="2"
+            android:text=" "
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Theme.Signin.Button.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="4"
+            android:textStyle="normal"
+            android:text="Send Photos/Videos"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:cornerRadius="@dimen/_5sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

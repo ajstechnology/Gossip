@@ -1,0 +1,62 @@
+[
+  {
+    "msg": "Hey ! How are you ?",
+    "c_type": 1,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "I am fine",
+    "c_type": 2,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "That's good to know",
+    "c_type": 1,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "What about you ?",
+    "c_type": 2,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "I'm doing good.",
+    "c_type": 1,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "Have you done that project which we've discussed?",
+    "c_type": 1,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "Yes, almost.",
+    "c_type": 2,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "Looking for little help to finish it",
+    "c_type": 2,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "Okay, then. Let's schedule a meeting for it.",
+    "c_type": 1,
+    "m_type": "text",
+    "time": "12:42"
+  },
+  {
+    "msg": "That'd be great",
+    "c_type": 2,
+    "m_type": "text",
+    "time": "12:42"
+  }
+]

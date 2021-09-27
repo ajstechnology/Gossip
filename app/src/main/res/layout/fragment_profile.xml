@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/cover_picture"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_160sdp"
+        android:background="@color/glidePlaceholder"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/edit_cover"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="#8FFFFFFF"
+        android:padding="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_edit" />
+
+    <ImageView
+        android:id="@+id/barcode_gen"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintEnd_toStartOf="@+id/edit_profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image"
+        app:srcCompat="@drawable/ic_qr_code" />
+
+    <ImageView
+        android:id="@+id/edit_profile_image"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@color/purple_200"
+        android:padding="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/barcode_gen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barcode_gen"
+        app:srcCompat="@drawable/ic_edit"
+        app:tint="@android:color/white" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_image"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:padding="@dimen/_2sdp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user_fl_name"
+        app:shapeAppearance="@style/roundedImageViewRounded"
+        app:strokeColor="@color/purple_200"
+        app:strokeWidth="@dimen/_2sdp"
+        tools:src="@drawable/avatar_8" />
+
+    <TextView
+        android:id="@+id/user_fl_name"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:maxLength="25"
+        android:textColor="@color/purple_200"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/barcode_gen"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/cover_picture"
+        tools:text="Margi Patel" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_10ssp"
+        android:maxLength="20"
+        app:layout_constraintEnd_toEndOf="@+id/user_fl_name"
+        app:layout_constraintStart_toStartOf="@+id/user_fl_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_fl_name"
+        tools:text="\@margipatel" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_10ssp"
+        android:maxLength="150"
+        app:layout_constraintEnd_toEndOf="@+id/user_fl_name"
+        app:layout_constraintStart_toStartOf="@+id/user_fl_name"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
+        tools:text="At Work" />
+
+    <ListView
+        android:id="@+id/profile_options"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/status"
+        tools:listitem="@layout/item_profile_options" />
+</androidx.constraintlayout.widget.ConstraintLayout>

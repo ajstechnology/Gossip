@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "254293149554",
+    "project_id": "gossip-messenger-ec800",
+    "storage_bucket": "gossip-messenger-ec800.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254293149554:android:36ebba195869155c63ffeb",
+        "android_client_info": {
+          "package_name": "com.gtech.gossipmessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254293149554-jqed0etefis73m09o0rrcu0msul289qi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gtech.gossipmessenger",
+            "certificate_hash": "92b783719b5a39bb17a4113d407e658ca5b0ef57"
+          }
+        },
+        {
+          "client_id": "254293149554-c0tuhm95f82jl9u3un27p9q8hbga0ul5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWPhOSUAJQE8n9Hd1L6wkDwu2qSpswbIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254293149554-c0tuhm95f82jl9u3un27p9q8hbga0ul5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

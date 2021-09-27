@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gtech.gossipmessenger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:fullBackupOnly="false"
+        android:icon="@drawable/bg_header_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/bg_header_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Signin"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name=".ui.account.AccountActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GossipMessenger" />
+        <activity
+            android:name=".ui.edit.email.EmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.edit.mobile.MobileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.edit.username.UsernameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.edit.changepass.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.imageviewer.ImageViewerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.splash.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.status.StatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GossipMessenger" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.signin.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.signup.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.passwordset.PasswordSetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.otp.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setacct.SetAccountDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.forgotpass.ForgotPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.deleteaccount.DeleteAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.verifyotp.OTPVerifyActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="gossipmessenger.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.resetpass.ResetPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.update.ProfileUpdateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.imageviewer.Gallery"
+            android:screenOrientation="portrait" />
+
+        <activity
+        android:name=".ui.synccontacts.SyncContacts"
+        android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.contactinfo.ContactInfo"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.contactsynclocal.ContactNumberSync"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.contactsynclocal.ContactName"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.contactsynclocal.AddContactActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.schedulemsg.Schedulemsg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.archive.ArchiveContacts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gtech.gossipmessenger.ui.countries.CountriesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GossipMessenger" />
+
+        <!-- <provider
+             android:name="androidx.core.content.FileProvider"
+             android:authorities="${applicationId}.provider"
+             android:exported="false"
+             android:grantUriPermissions="true">
+             <meta-data
+                 android:name="android.support.FILE_PROVIDER_PATHS"
+                 android:resource="@xml/provider_paths" />
+         </provider>-->
+    </application>
+
+</manifest>
